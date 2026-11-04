@@ -1,5 +1,6 @@
 import {MainPage} from "./pages/main-page/main-page.tsx";
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import {Layout} from "./app/layout/layout.tsx";
 
 function App() {
 
@@ -7,8 +8,10 @@ function App() {
     <>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
+                <Route element={<Layout />}>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     </>
