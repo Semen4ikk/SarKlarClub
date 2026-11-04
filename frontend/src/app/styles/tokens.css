@@ -1,0 +1,52 @@
+:root {
+    --rui-duration-xs: 100ms;
+    --rui-duration-sm: 200ms;
+    --rui-duration-md: 300ms;
+    --rui-easing-default: cubic-bezier(0.15, 0.5, 0.5, 1);
+    --rui-timing-sm: var(--rui-duration-sm) var(--rui-easing-default);
+    --rui-timing-md: var(--rui-duration-md) var(--rui-easing-default);
+
+    --rui-font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --rui-font-brand: "Inter", var(--rui-font-system);
+    --rui-font-size-body1: 1rem;        /* 16px */
+    --rui-font-size-body2: 0.875rem;    /* 14px */
+    --rui-font-weight-body2: 500;
+    --rui-font-weight-emphasis2: 700;
+
+    --rui-color-channel-black: 31 31 31;
+    --rui-color-channel-white: 255 255 255;
+    --rui-color-black: #1f1f1f;
+    --rui-color-white: #ffffff;
+    --rui-color-foreground: #1f1f1f;
+    --rui-color-accent: #234fa6;
+    --rui-color-grey-tone-5: rgba(31 31 31 / 0.05);
+    --rui-color-grey-tone-8: rgba(31 31 31 / 0.07);
+    --rui-color-grey-tone-20: rgba(31 31 31 / 0.65);
+
+    --rui-radius-r8: 0.5rem;
+    --rui-radius-r12: 0.75rem;
+    --rui-radius-round: 9999px;
+    --rui-space-sp200: 0.5rem;
+    --rui-space-sp300: 0.75rem;
+    --rui-space-sp400: 1rem;
+    --rui-space-sp600: 1.5rem;
+    --rui-size-button-sm: 2.5rem;   /* 40px */
+
+    --website-navigation-height: 72px;
+    --website-layout-max-width: 1000px;
+    --website-navigation-header-background: rgba(255, 255, 255, 0.7);
+    --website-navigation-button-background: rgba(31, 31, 31, 0.05);
+    --website-navigation-button-hover-background: rgba(0, 0, 0, 0.1);
+
+    --rui-focus-outline: 0.125rem solid rgba(35 79 166 / 0.5);
+    --rui-focus-outline-offset: 0.125rem;
+}
+
+body {
+    margin: 0;
+    font-family: var(--rui-font-brand);
+    color: var(--rui-color-foreground);
+    background: var(--rui-color-white);
+    -webkit-font-smoothing: antialiased;
+}
